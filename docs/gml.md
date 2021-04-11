@@ -10,8 +10,8 @@ This class currently provides the following methods:
 ```
 >Function: calculate essential support  
 >parameter:  
-> · variable_set - the set of target variables    
-> · update_feature_set - the set of target features    
+> `variable_set` - the set of target variables    
+> `update_feature_set` - the set of target features    
 >Return: none            
 >Return type：none          
 
@@ -20,7 +20,7 @@ This class currently provides the following methods:
 ```
 >Function: Calculate approximate probability  
 >parameter:  
-> · variable_set - the set of target variables      
+> `variable_set` - the set of target variables      
 >Return: none            
 >Return type：none          
 ```python
@@ -28,7 +28,7 @@ This class currently provides the following methods:
 ```
 >Function: Select the first m latent variables according to the calculated Evidential Support (large to small)
 >parameter:  
-> · m - The number of latent variables to be selected      
+>`m` - The number of latent variables to be selected      
 >Return: a list containing m variable ids             
 >Return type：list
 ```python
@@ -36,8 +36,8 @@ This class currently provides the following methods:
 ```
 >Function: calculate entropy, select top_k latent variables with small entropy  
 >parameter:  
-> · mvar_id_list - Choose range      
-> · k - The number of latent variables to be selected      
+> `mvar_id_list` - Choose range      
+> `k` - The number of latent variables to be selected      
 >Return: a list containing k ids           
 >Return type：list
 ```python
@@ -45,7 +45,7 @@ This class currently provides the following methods:
 ```
 >Function: Select the edges, variables and features which needed for subsequent subgraph construction  
 >parameter:  
-> · var_id - The id of the target variable    
+> `var_id` - The id of the target variable    
 >Return: Edges, variables and features needed for subsequent subgraph construction            
 >Return type：set
 ```python
@@ -53,7 +53,7 @@ This class currently provides the following methods:
 ```
 >Function: Select topk latnet variables and create subgraph  
 >parameter:  
-> · var_id - The id of the target variable         
+> `var_id` - The id of the target variable         
 >Return: According to the factor graph requirement of numbskull,return weight, variable, factor, fmap, domain_mask, edges           
 >Return type: multiple types
 ```python
@@ -61,7 +61,7 @@ This class currently provides the following methods:
 ```
 >Function: inference subgraph  
 >parameter:  
-> · var_id - For entity recognition, var_id is a variable id, and var_id is a set of k variables for sentiment analysis              
+> `var_id` - For entity recognition, var_id is a variable id, and var_id is a set of k variables for sentiment analysis              
 >Return: none            
 >Return type：none          
 ```python
@@ -69,7 +69,7 @@ This class currently provides the following methods:
 ```
 >Function: Compare the entropy of k latent variables, select the one with the smallest entropy and label it, and write the parameters learned from this graph back to self.features
 >parameter:  
-> · var_id_list - A list of k ids, the probability corresponding to each variable is taken from variables    
+> `var_id_list` - A list of k ids, the probability corresponding to each variable is taken from variables    
 >Return: No output, directly update the label and entropy in vairables, by the way, you can update observed_variables_id and potential_variables_id  
 >Return type：dict
 ```python
@@ -77,7 +77,7 @@ This class currently provides the following methods:
 ```
 >Function: Main flow      
 >parameter:  
->none            
+>`none`             
 >Return: none            
 >Return type：none            
 ```python
@@ -85,7 +85,7 @@ This class currently provides the following methods:
 ```
 >Function: Calculate the accuracy rate, precision rate, recall rate, f1 value of inference results, etc.  
 >parameter:  
-> · none      
+> `none`       
 >Return: none            
 >Return type：none            
 ```python
@@ -93,6 +93,6 @@ This class currently provides the following methods:
 ```      
 >Function: Save the variable and feature information after inference.               
 >parameter:  
-> none       
+> `none`  
 >Return: none                     
 >Return type：none            
