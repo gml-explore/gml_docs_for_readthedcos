@@ -10,7 +10,7 @@ gml is a Python package that provides for Gradual Machine Learning
  Before using this framework, you need to prepare your data according to the following [Data structure description](./data_structures.md) .
 
 After preparing the data, you can use this framework as follows.
-First you need to prepare a configuration file [example](./examples/example.config),and set some [parameters](./parameter_description.md)
+First you need to prepare a configuration file example,and set some [parameters](./parameter_description.md)
 ``` python 
 [para]
 top_m = 2000  
