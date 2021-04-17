@@ -6,6 +6,5 @@ nav:
   - example: example.md
   - data_structures: data_structures.md
   - parameter_description: parameter_description.md
-  - API: gml.md
-    
+  - API: gml.md 
 collapse_single_pages: true
