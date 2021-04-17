@@ -1,5 +1,6 @@
 site_name: Gradual Machine Learning(GML) framework
 theme: readthedocs
+collapse_single_pages: true
 nav:
   - introduction: goal.md
   - Installation and Usage: usage.md
@@ -7,4 +8,3 @@ nav:
   - data_structures: data_structures.md
   - parameter_description: parameter_description.md
   - API: gml.md 
-collapse_single_pages: true
