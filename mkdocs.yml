@@ -1,13 +1,11 @@
 site_name: Gradual Machine Learning(GML) framework
 theme: readthedocs
 nav:
-  - gml introduction: index.md
-  - approximate_probability_estimation: approximate_probability_estimation.md
-  - construct_subgraph: construct_subgraph.md
+  - introduction: goal.md
+  - Installation and Usage: usage.md
+  - example: example.md
   - data_structures: data_structures.md
-  - easy_instance_labeling: easy_instance_labeling.md
-  - evidence_select: evidence_select.md
-  - evidential_support: evidential_support.md
-  - gml: gml.md
-  - gml toolkit: gml_utils.md
   - parameter_description: parameter_description.md
+  - API: gml.md
+    
+collapse_single_pages: true

@@ -1,0 +1,5 @@
+![gml_logo](./gml_logo.jpg)
+# Gradual Machine Learning(GML)
+gml is a Python package that provides for Gradual Machine Learning
+## Introuduction
+   In order to support more and more applications of gradual machine learning and help researchers quickly complete model deployment and testing, this project aims to develop a general gradual machine learning platform. Gradual machine learning mainly includes three major steps: easy instance labeling, feature extraction and influence modeling, and gradual inference. According to the different steps of gradual machine learning, multiple unified algorithms are designed and implemented. Currently, several types of factor graphs such as single-factor non-parameterize, binary-factor non-parameterize, and single-factor parameterize are supported, and support factor graph parameter learning algorithm based on stochastic gradient descent and batch gradient descent

@@ -1,16 +1,8 @@
-![gml_logo](./gml_logo.jpg)
+![gml_logo](./gml_logo.jpg)   
 
-# Gradual Machine Learning(GML) framework
-            
-gml is a Python package that provides for Gradual Machine Learning
-
-## Installation
-    pip install gradual-ml
-## Usage
- Before using this framework, you need to prepare your data according to the following [Data structure description](./data_structures.md) .
 
 After preparing the data, you can use this framework as follows.
-First you need to prepare a configuration file example,and set some [parameters](./parameter_description.md)
+First you need to prepare a configuration file [example](./examples/example.config),and set some [parameters](./parameter_description.md)
 ``` python 
 [para]
 top_m = 2000  
@@ -34,5 +26,3 @@ with open('features.pkl', 'rb') as f:
 graph = GML.initial("alsa.config", variables, features)
 graph.inference()
 ```
-
-
